@@ -1,0 +1,2211 @@
+Started GET "/" for 127.0.0.1 at 2018-03-19 10:53:41 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (8.6ms)
+Completed 200 OK in 462ms (Views: 16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 10:55:03 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (8.6ms)
+Completed 200 OK in 382ms (Views: 17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 10:55:05 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (18.7ms)
+Completed 200 OK in 27ms (Views: 24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:02:28 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.5) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1056.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (320.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('1143268810739741490', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnnotations (20180319135910)
+  [1m[35m (240.7ms)[0m  [1m[35mCREATE TABLE `annotations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180319135910')[0m
+  [1m[35m (37.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFriends (20180319140034)
+  [1m[35m (245.8ms)[0m  [1m[35mCREATE TABLE `friends` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `address` varchar(255), `email` varchar(255), `phone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180319140034')[0m
+  [1m[35m (85.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-03-19 14:03:20', '2018-03-19 14:03:20')[0m
+  [1m[35m (37.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('1143268810739741490')[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:03:34 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (7.8ms)
+Completed 200 OK in 30ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-03-19 11:04:03 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (55.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (194.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (272.2ms)
+Completed 200 OK in 328ms (Views: 293.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:04:39 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 1848ms (Views: 1835.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:05:01 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 63ms (Views: 55.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/friend" for 127.0.0.1 at 2018-03-19 11:05:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/friend"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:05:16 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:07:01 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-03-19 11:13:42 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (14.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 59ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2018-03-19 11:14:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 473ms (Views: 465.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:16:37 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (7.6ms)
+Completed 200 OK in 33ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:16:41 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (10.5ms)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:17:50 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 369ms (Views: 353.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:27:12 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 2538ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__576573054_91465800'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:28:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.):
+    23: 
+    24:     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    25:     <!-- Size should be 57 x 57 pixels -->
+    26:     <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+    27: 
+    28:     <!-- For all other devices -->
+    29:     <!-- Size should be 32 x 32 pixels -->
+  
+app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__576573054__650601128'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:29:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 193ms (Views: 190.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:29:35 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 108ms (Views: 98.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/a" for 127.0.0.1 at 2018-03-19 11:29:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/a"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:29:49 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (7.8ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 105ms (Views: 85.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:31:24 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 84ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:33:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:33:46 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 87ms (Views: 83.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:33:48 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:33:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:38:43 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:38:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 79ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:40:55 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 696ms (Views: 679.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:40:59 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (42.3ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: expects it to return a hash, but does not):
+    1: <%- model_class = Annotation -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/annotations/index.html.erb:3:in `_app_views_annotations_index_html_erb__538926227__632771898'
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:43:06 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: expects it to return a hash, but does not):
+    1: <%- model_class = Friend -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/friends/index.html.erb:3:in `_app_views_friends_index_html_erb__401387326__639924618'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:43:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 107ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:43:30 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 94ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:43:32 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: expects it to return a hash, but does not):
+    1: <%- model_class = Annotation -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/annotations/index.html.erb:3:in `_app_views_annotations_index_html_erb__538926227__651512368'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:46:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 171ms (Views: 169.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:46:56 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (19.2ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Annotation -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/annotations/index.html.erb:3:in `_app_views_annotations_index_html_erb__538926227__617389868'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:47:06 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 114ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:47:08 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (22.7ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Friend -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/friends/index.html.erb:3:in `_app_views_friends_index_html_erb__401387326__648587528'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:48:05 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 729ms (Views: 708.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 11:48:08 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (59.8ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Friend -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/friends/index.html.erb:3:in `_app_views_friends_index_html_erb___58536949__632448658'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:51:26 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:51:28 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Annotation -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/annotations/index.html.erb:3:in `_app_views_annotations_index_html_erb__126170517__646030818'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:55:11 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 772ms (Views: 755.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:55:14 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (73.4ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Annotation -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/annotations/index.html.erb:3:in `_app_views_annotations_index_html_erb___656887449__632355228'
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:56:57 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 895ms (Views: 876.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:57:01 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 149ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 11:57:03 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (57.1ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Annotation -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/annotations/index.html.erb:3:in `_app_views_annotations_index_html_erb__526884125_91445410'
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:00:29 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 679ms (Views: 663.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:00:34 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (45.4ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Annotation -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/annotations/index.html.erb:3:in `_app_views_annotations_index_html_erb__753762995__633852048'
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:03:22 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Friend -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/friends/index.html.erb:3:in `_app_views_friends_index_html_erb___968481200__621895308'
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:08:10 -0300
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 741ms (Views: 725.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:08:13 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  Rendered annotations/index.html.erb within layouts/application (37.9ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+     5: <table class="table table-striped">
+     6:   <thead>
+     7:     <tr>
+     8:       <th><%= model_class.human_attribute_name(:id) %></th>
+     9:       <th><%= model_class.human_attribute_name(:body) %></th>
+    10:       <th><%= model_class.human_attribute_name(:created_at) %></th>
+    11:       <th><%=t '.actions', :default => t("helpers.actions") %></th>
+  
+app/views/annotations/index.html.erb:8:in `_app_views_annotations_index_html_erb___467921606__632166548'
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:08:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 122ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:08:22 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (27.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/andre/Documentos/remember/config/locales/pt-br_rails.yml: #<Psych::SyntaxError: (/home/andre/Documentos/remember/config/locales/pt-br_rails.yml): did not find expected key while parsing a block mapping at line 1 column 1>):
+    1: <%- model_class = Friend -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/friends/index.html.erb:3:in `_app_views_friends_index_html_erb___937759811__648141728'
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:10:40 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 778ms (Views: 761.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:10:43 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 194ms (Views: 182.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:10:49 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 139ms (Views: 130.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:10:51 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (14.5ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 136ms (Views: 118.9ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:11:47 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 75ms (Views: 67.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:12:00 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 87ms (Views: 84.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:12:03 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 94ms (Views: 86.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:14:36 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 105ms (Views: 101.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:16:44 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 101ms (Views: 97.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 12:23:38 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (132.4ms)
+  Rendered friends/new.html.erb within layouts/application (137.0ms)
+Completed 200 OK in 239ms (Views: 198.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:24:55 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 118ms (Views: 114.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:25:37 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.1ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 130ms (Views: 126.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:25:39 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 102ms (Views: 98.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:25:40 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 100ms (Views: 95.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:25:41 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 94ms (Views: 90.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:25:41 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 109ms (Views: 105.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:26:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:26:10 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:26:12 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (2.0ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 126ms (Views: 121.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:26:15 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 116ms (Views: 112.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:26:16 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.0ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 113ms (Views: 109.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:32:22 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:33:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:33:42 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 127ms (Views: 124.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:33:45 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 112ms (Views: 108.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 12:33:52 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (8.4ms)
+  Rendered friends/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 122ms (Views: 119.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:33:53 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 131ms (Views: 128.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:33:54 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 101ms (Views: 97.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 12:33:55 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (9.1ms)
+  Rendered annotations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 100ms (Views: 85.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:33:56 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 117ms (Views: 113.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:33:57 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 107ms (Views: 103.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:34:04 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-03-19 12:34:13 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [18 times] (15.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:39:31 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 658ms (Views: 641.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:39:36 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  Rendered friends/index.html.erb within layouts/application (36.1ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (:"pt-BR" is not a valid locale):
+    1: <%- model_class = Friend -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: </div>
+    5: <table class="table table-striped">
+    6:   <thead>
+  
+app/views/friends/index.html.erb:3:in `_app_views_friends_index_html_erb___23508257__632694808'
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:43:48 -0300
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 676ms (Views: 659.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:43:53 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 147ms (Views: 132.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:43:57 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 114ms (Views: 106.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:44:01 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (2.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 114ms (Views: 106.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:50:03 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (3.0ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 121ms (Views: 115.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:50:04 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 122ms (Views: 118.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:50:07 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 116ms (Views: 112.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:51:15 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.5ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 715ms (Views: 692.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:51:19 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mAnnotation Load (1.0ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 123ms (Views: 117.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:51:20 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 111ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:51:22 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 108ms (Views: 97.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:54:01 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 741ms (Views: 725.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:54:05 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 170ms (Views: 146.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:54:07 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 110ms (Views: 103.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:54:09 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.0ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 114ms (Views: 110.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:54:40 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.3ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:54:41 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 122ms (Views: 119.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:54:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 129ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:54:48 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 115ms (Views: 111.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 12:54:49 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 131ms (Views: 126.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:55:03 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 116ms (Views: 112.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:55:17 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 114ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 12:55:25 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 124ms (Views: 121.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:05:48 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 689ms (Views: 673.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:05:52 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 154ms (Views: 139.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:05:57 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.1ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 114ms (Views: 101.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:06:19 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 120ms (Views: 110.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:07:24 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 107ms (Views: 97.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:08:03 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 98ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:08:06 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (4.2ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 116ms (Views: 108.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 13:08:08 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (21.3ms)
+  Rendered annotations/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 129ms (Views: 111.2ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2018-03-19 13:09:26 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DYcU1ri4dwPYjh2jhpEoDDfdp3SWvDRU5kLQ44pzJ5YO5++Rb62/b0mB70KwkcV/1B543bpJu9XDI566ua6fig==", "annotation"=>{"body"=>"Testando as configurações"}, "commit"=>"Criar Annotation"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('Testando as configurações', '2018-03-19 16:09:26', '2018-03-19 16:09:26')[0m
+  [1m[35m (176.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/annotations/1
+Completed 302 Found in 194ms (ActiveRecord: 178.4ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2018-03-19 13:09:26 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 177ms (Views: 70.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2018-03-19 13:10:36 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 118ms (Views: 78.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:10:38 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.2ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 13:10:40 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (5.2ms)
+  Rendered annotations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2018-03-19 13:10:52 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G/d/W42FkPlmhQCxGHbZPhQ+4ZkSLhTeF/ZUzG+Q7VIYl4QcWpBYlfeK8lAudjRN9/0+MD7bm18ylxqVXE1VTg==", "annotation"=>{"body"=>"Configurando os arquivos"}, "commit"=>"Criar Annotation"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('Configurando os arquivos', '2018-03-19 16:10:52', '2018-03-19 16:10:52')[0m
+  [1m[35m (588.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/annotations/2
+Completed 302 Found in 596ms (ActiveRecord: 589.5ms)
+
+
+Started GET "/annotations/2" for 127.0.0.1 at 2018-03-19 13:10:53 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 2 LIMIT 1[0m
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 101ms (Views: 96.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:12:57 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 107ms (Views: 103.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2018-03-19 13:13:00 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 112ms (Views: 106.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:13:02 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:13:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 82ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:13:10 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.8ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 113ms (Views: 110.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:13:12 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 92ms (Views: 84.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 13:13:14 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (8.9ms)
+  Rendered friends/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 111ms (Views: 79.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 13:14:51 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (8.2ms)
+  Rendered friends/new.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 156ms (Views: 106.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:14:54 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 103ms (Views: 95.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:14:56 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (2.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 107ms (Views: 101.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:14:59 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 88ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:15:00 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 123ms (Views: 118.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:15:02 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 110ms (Views: 104.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 13:15:03 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (7.7ms)
+  Rendered friends/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 117ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2018-03-19 13:15:05 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U4m9Ll0oQbNvWB3ZYilb3j5YfdqtRApFRr1Hnu1cKvIkLxJJ7Y4ytX5Ygk8VBYKnv92zYWUhHS47qPOgjWTwRQ==", "friend"=>{"name"=>"", "address"=>"", "email"=>"", "phone"=>""}, "commit"=>"Criar Amigo"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('', '', '', '', '2018-03-19 16:15:05', '2018-03-19 16:15:05')[0m
+  [1m[35m (799.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/1
+Completed 302 Found in 815ms (ActiveRecord: 803.6ms)
+
+
+Started GET "/friends/1" for 127.0.0.1 at 2018-03-19 13:15:06 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 1 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 79ms (Views: 73.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/friends/1" for 127.0.0.1 at 2018-03-19 13:15:12 -0300
+Processing by FriendsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qfWrUEOyxu7PtR4/WaeaNFPteP/ax38nvZ+z7mtsHrfH9CCrhG0rMPsg120/TLZXLPJVUsnm+vpbSabNCFM9+w==", "id"=>"1"}
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.3ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 1[0m
+  [1m[35m (68.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 83ms (ActiveRecord: 75.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:15:12 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (3.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:18:06 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.8ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 13:18:07 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (11.4ms)
+  Rendered annotations/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 116ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:19:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:19:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:19:11 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:19:12 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 126ms (Views: 114.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:19:14 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 133ms (Views: 122.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 13:19:15 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (8.7ms)
+  Rendered annotations/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 13:20:15 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (4.5ms)
+  Rendered annotations/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2018-03-19 13:20:27 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NAfENqei0NRv6AQSFubcanyXyjVZqKjJaJyiEByjO3xaBk/NYH09Clt9zUBwDfAJA4jnmEqJLRSOSrczf5wYMA==", "annotation"=>{"body"=>"Mais um teste de configuração"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('Mais um teste de configuração', '2018-03-19 16:20:27', '2018-03-19 16:20:27')[0m
+  [1m[35m (482.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/annotations/3
+Completed 302 Found in 493ms (ActiveRecord: 484.7ms)
+
+
+Started GET "/annotations/3" for 127.0.0.1 at 2018-03-19 13:20:28 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 3 LIMIT 1[0m
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 85ms (Views: 79.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:20:32 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (3.2ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 109ms (Views: 103.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:21:19 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 95ms (Views: 92.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 13:21:21 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (9.4ms)
+  Rendered friends/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 117ms (Views: 91.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2018-03-19 13:21:26 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IwmobY5veMy0+K8gTcvmQTb8GPUnVLi4YmOGR/kI6+XKonGBp/O5SPTfSr2G/bghV4+2Bz4RYmcnDonf9z5GA==", "friend"=>{"name"=>"André Luiz Alves Julião", "address"=>"Rua Maurícia Borges", "email"=>"juliaoandrealves@gmail.com", "phone"=>"21974448025"}, "commit"=>"Criar Amigo"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('André Luiz Alves Julião', 'Rua Maurícia Borges', 'juliaoandrealves@gmail.com', '21974448025', '2018-03-19 16:21:26', '2018-03-19 16:21:26')[0m
+  [1m[35m (125.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/2
+Completed 302 Found in 138ms (ActiveRecord: 127.3ms)
+
+
+Started GET "/friends/2" for 127.0.0.1 at 2018-03-19 13:21:26 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (2.8ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 2 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 116ms (Views: 105.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:21:31 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 100ms (Views: 97.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:22:17 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 150ms (Views: 147.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:22:31 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 108ms (Views: 104.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:22:40 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:23:43 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 92ms (Views: 88.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends/2" for 127.0.0.1 at 2018-03-19 13:23:47 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 2 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 84ms (Views: 78.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:23:49 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 127ms (Views: 123.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:24:56 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:25:06 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 83ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:25:07 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (3.3ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 108ms (Views: 101.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:25:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 111ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:25:11 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 137ms (Views: 132.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:25:32 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 125ms (Views: 122.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:25:36 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 106ms (Views: 103.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 13:26:49 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (5.2ms)
+  Rendered annotations/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 13:26:50 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 103ms (Views: 100.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:26:52 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (4.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 126ms (Views: 120.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 13:26:59 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (10.6ms)
+  Rendered friends/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 92ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:27:00 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.0ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 117ms (Views: 112.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:28:48 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 129ms (Views: 126.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:28:50 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 130ms (Views: 127.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:28:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 119ms (Views: 116.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:28:52 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 151ms (Views: 146.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:28:54 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 94ms (Views: 91.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:28:57 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:28:59 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 118ms (Views: 115.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:30:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 100ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 13:30:20 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (2.1ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 150ms (Views: 145.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 14:09:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 14:09:10 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.9ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 144ms (Views: 140.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 14:09:17 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 115ms (Views: 111.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2018-03-19 14:13:05 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 99ms (Views: 94.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 14:13:17 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 108ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 14:13:19 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 116ms (Views: 110.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 14:13:20 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 130ms (Views: 126.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 14:13:36 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 108ms (Views: 105.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 14:13:39 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 119ms (Views: 116.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 14:14:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 139ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 14:14:34 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 130ms (Views: 127.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 14:17:53 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 133ms (Views: 130.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 14:17:54 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (3.1ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 104ms (Views: 94.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 14:17:57 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (14.6ms)
+  Rendered friends/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 116ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2018-03-19 14:18:26 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WF26MdH4j1cKJmf/YGn3ZokXteQGdK62n6wGzGcJ70Av+xVWYV78URsm+GkXRS4fCJJ7X84Rud3iubLyBzE19w==", "friend"=>{"name"=>"Robson Felipe Alves", "address"=>"Rua Maurícia Borges", "email"=>"liperob@hotmail.com", "phone"=>"21974448025"}, "commit"=>"Criar Amigo"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.3ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Robson Felipe Alves', 'Rua Maurícia Borges', 'liperob@hotmail.com', '21974448025', '2018-03-19 17:18:26', '2018-03-19 17:18:26')[0m
+  [1m[35m (383.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/3
+Completed 302 Found in 429ms (ActiveRecord: 388.5ms)
+
+
+Started GET "/friends/3" for 127.0.0.1 at 2018-03-19 14:18:26 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 3 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 125ms (Views: 115.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 14:18:47 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.4ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 136ms (Views: 132.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:00:39 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 94ms (Views: 90.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 15:00:41 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 88ms (Views: 85.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 15:00:45 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (128.8ms)
+  Rendered annotations/new.html.erb within layouts/application (132.8ms)
+Completed 200 OK in 197ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 15:07:50 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (22.8ms)
+  Rendered annotations/new.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 792ms (Views: 742.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:07:56 -0300
+Processing by FriendsController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant FriendsController::Post):
+  
+app/controllers/friends_controller.rb:8:in `index'
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:08:23 -0300
+Processing by FriendsController#index as HTML
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 11[0m
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Friend Load (0.0ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 11[0m  [["LIMIT", 11]]
+NoMethodError (undefined method `Post' for #<Friend::ActiveRecord_Relation:0xbf65864>):
+  
+app/controllers/friends_controller.rb:7:in `index'
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:09:52 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 144ms (Views: 131.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:09:56 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 92ms (Views: 89.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:09:59 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 138ms (Views: 134.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 15:10:37 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 15:10:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 74ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:10:41 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2018-03-19 15:11:00 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.5ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 115ms (Views: 102.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2018-03-19 15:11:04 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (5.3ms)
+  Rendered annotations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 93ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:11:09 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.1ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 138ms (Views: 134.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 15:11:12 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (12.4ms)
+  Rendered friends/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 105ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2018-03-19 15:11:38 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"coTWKWSrm85A/3mDtNL60xP6rBag5FYGF2geT5r3hJIFInlO1A3oyFH/5hXD/iOqkn9irWiBQW1qfapx+s9eJQ==", "friend"=>{"name"=>"Carlos", "address"=>"carlos.henrique@gmail.com", "email"=>"liperob@hotmail.com", "phone"=>"2126975488"}, "commit"=>"Criar Amigo"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.1ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Carlos', 'carlos.henrique@gmail.com', 'liperob@hotmail.com', '2126975488', '2018-03-19 18:11:38', '2018-03-19 18:11:38')[0m
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/4
+Completed 302 Found in 62ms (ActiveRecord: 43.8ms)
+
+
+Started GET "/friends/4" for 127.0.0.1 at 2018-03-19 15:11:38 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFriend Load (3.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 4 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 154ms (Views: 136.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:11:40 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 116ms (Views: 113.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 15:11:55 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (11.4ms)
+  Rendered friends/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 110ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2018-03-19 15:12:01 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AFjsKyB9ES+MKY0gfm8Y4P5+Fy66CwHwEgXAYe34onx3/kNMkNtiKZ0pErYJQ8GZf/vZlXJuFptvEHRfjcB4yw==", "friend"=>{"name"=>"fff", "address"=>"ff", "email"=>"ff", "phone"=>"ff"}, "commit"=>"Criar Amigo"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('fff', 'ff', 'ff', 'ff', '2018-03-19 18:12:01', '2018-03-19 18:12:01')[0m
+  [1m[35m (147.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/5
+Completed 302 Found in 162ms (ActiveRecord: 148.5ms)
+
+
+Started GET "/friends/5" for 127.0.0.1 at 2018-03-19 15:12:01 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 5 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 101ms (Views: 97.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:12:03 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 110ms (Views: 105.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 15:12:04 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (15.3ms)
+  Rendered friends/new.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 132ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2018-03-19 15:12:12 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/LUTjRKjkvPHxScXNAVP5eCRo9qMior441g1kNokNMSLE7zqogXh9dbFuIFDKZacYRRtYUTvnZOeTYGuuhzucw==", "friend"=>{"name"=>"gg", "address"=>"gg", "email"=>"gg", "phone"=>"gg"}, "commit"=>"Criar Amigo"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.6ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('gg', 'gg', 'gg', 'gg', '2018-03-19 18:12:12', '2018-03-19 18:12:12')[0m
+  [1m[35m (330.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/6
+Completed 302 Found in 349ms (ActiveRecord: 336.1ms)
+
+
+Started GET "/friends/6" for 127.0.0.1 at 2018-03-19 15:12:12 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 6 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 115ms (Views: 109.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:12:13 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  [1m[35m (31.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 126ms (Views: 90.3ms | ActiveRecord: 32.1ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2018-03-19 15:12:23 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (7.5ms)
+  Rendered friends/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 98ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2018-03-19 15:12:28 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DR7eh+etwxGvKzNLUlblmRZ15dUOrEXw4vas5/eTeR96uHHgVwuwF74rrN0lejzgl/ArbsbJUpuf4xjZl6ujqA==", "friend"=>{"name"=>"gg", "address"=>"gg", "email"=>"ggb", "phone"=>"bgb"}, "commit"=>"Criar Amigo"}
+  [1m[35m (7.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('gg', 'gg', 'ggb', 'bgb', '2018-03-19 18:12:28', '2018-03-19 18:12:28')[0m
+  [1m[35m (850.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/7
+Completed 302 Found in 872ms (ActiveRecord: 858.7ms)
+
+
+Started GET "/friends/7" for 127.0.0.1 at 2018-03-19 15:12:29 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 7 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 107ms (Views: 99.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2018-03-19 15:12:31 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 112ms (Views: 107.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/friends?page=2" for 127.0.0.1 at 2018-03-19 15:12:34 -0300
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.7ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 5[0m
+  Rendered friends/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends?page=1" for 127.0.0.1 at 2018-03-19 15:12:36 -0300
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 104ms (Views: 99.3ms | ActiveRecord: 2.2ms)
+
+
